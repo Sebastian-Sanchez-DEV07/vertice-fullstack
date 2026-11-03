@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio access — Vértice</title>
+    <meta name="description" content="Private studio access for the Vértice project manager.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body class="auth-body">
+    <main class="auth-main">
+        <a class="auth-logo" href="index.html" aria-label="Vértice Architecture — home">
+            <img src="images/Isologo_light_brown.svg" alt="Vértice Arquitectura">
+        </a>
+
+        <section class="auth-card" aria-labelledby="login-title">
+            <p class="eyebrow">STUDIO ACCESS</p>
+            <h1 class="auth-title" id="login-title">Sign in.</h1>
+            <p class="auth-copy">Manage projects and read messages from the studio panel.</p>
+
+            <form class="auth-form" id="login-form" novalidate>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="username"
+                           placeholder="admin@vertice.local" required>
+                </div>
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" autocomplete="current-password"
+                           placeholder="Your password" minlength="8" required>
+                </div>
+                <button class="button button--light auth-submit" type="submit">SIGN IN</button>
+                <p class="form-status" id="login-status" role="status"></p>
+            </form>
+
+            <p class="auth-note"><a href="index.html">← Back to the site</a></p>
+        </section>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

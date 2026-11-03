@@ -1,0 +1,12 @@
+{
+  "name": "vertice-fullstack",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Avance del reto: Vértice Arquitectura (frontend HTML/CSS/JS + backend Node/Express/PostgreSQL)",
+  "scripts": {
+    "install:api": "npm --prefix backend install",
+    "dev": "npm --prefix backend run dev",
+    "start": "npm --prefix backend start",
+    "db:seed": "npm --prefix backend run db:seed"
+  }
+}

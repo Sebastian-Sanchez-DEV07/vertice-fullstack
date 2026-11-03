@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vértice — Architecture and Spatial Investment</title>
+    <meta name="description" content="Vértice creates architecture and spatial investments with lasting value: residential, hospitality, and workplace projects built to endure.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="logo-link" href="#top" aria-label="Vértice Architecture — home">
+                <img class="logo" src="images/Isologo_light_brown.svg" alt="Vértice Arquitectura">
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+                <span class="visually-hidden">Menu</span>
+                <span class="nav-toggle__bars" aria-hidden="true"></span>
+            </button>
+            <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+                <a href="#top" aria-current="page">HOME</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#insights">INSIGHTS</a>
+                <a href="#about">ABOUT US</a>
+                <a href="#contact">CONTACT</a>
+                <a class="nav-cta" href="login.html">ADMIN</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <img class="hero-image" src="images/hero.jpg"
+                 alt="Angular concrete façade of a modern building against an open sky" aria-hidden="true">
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <p class="eyebrow"></p>
+                    <h1 id="hero-title">Spaces of lasting value.</h1>
+                    <p class="hero__intro">Architecture, hospitality, and investment for places that deserve to endure.</p>
+                    <div class="hero__actions">
+                        <a class="button button--light" href="#projects">EXPLORE PROJECTS</a>
+                        <a class="button button--ghost" href="#contact">START A CONVERSATION</a>
+                    </div>
+                </div>
+                <p class="hero__index" aria-hidden="true">SCROLL TO DISCOVER <span aria-hidden="true">↓</span></p>
+            </div>
+        </section>
+
+        <section class="statement" aria-label="Studio statement">
+            <div class="container">
+                <p class="statement__text">
+                    We find the right angle —<em>el vértice</em>— where land, light, and intent meet.
+                </p>
+            </div>
+        </section>
+
+        <section class="section projects" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">01 / SELECTED WORK</p>
+                    <h2 id="projects-title">Projects with a point of view.</h2>
+                    <p>We invest in places that make daily life more considered, connected, and durable.</p>
+                </div>
+
+                <p class="projects-status" id="projects-status" role="status">Loading projects…</p>
+                <div class="project-grid" id="project-grid"></div>
+            </div>
+        </section>
+
+        <section class="section insights" id="insights" aria-labelledby="insights-title">
+            <div class="container split-layout">
+                <div class="section-heading">
+                    <p class="eyebrow">02 / INSIGHTS</p>
+                    <h2 id="insights-title">Thinking beyond the floor plan.</h2>
+                </div>
+                <div class="insights-list">
+                    <article class="insight-item">
+                        <div class="insight-item__media">
+                            <img src="images/insight-materials.jpg"
+                                 alt="Architectural floor plan drawing on a desk" loading="lazy">
+                        </div>
+                        <div class="insight-item__body">
+                            <span class="insight-item__num" aria-hidden="true">01</span>
+                            <h3>Why material honesty matters</h3>
+                            <p>A short view on permanence, maintenance, and the stories materials carry.</p>
+                        </div>
+                    </article>
+                    <article class="insight-item">
+                        <div class="insight-item__media">
+                            <img src="images/insight-care.jpg"
+                                 alt="Detail of a carefully finished stone bathroom surface" loading="lazy">
+                        </div>
+                        <div class="insight-item__body">
+                            <span class="insight-item__num" aria-hidden="true">02</span>
+                            <h3>Designing for slower cities</h3>
+                            <p>How good spaces create room for attention, exchange, and belonging.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about" id="about" aria-labelledby="about-title">
+            <div class="container split-layout split-layout--about">
+                <div class="section-heading">
+                    <p class="eyebrow">03 / ABOUT US</p>
+                    <h2 id="about-title">A small studio with a long view.</h2>
+                </div>
+                <div class="about-copy">
+                    <p>Vértice brings together architecture, investment, and careful stewardship. We look for opportunities where a strong idea can become a lasting place.</p>
+                    <ul class="about-stats">
+                        <li><strong>12</strong><span>active spaces</span></li>
+                        <li><strong>08</strong><span>years of practice</span></li>
+                        <li><strong>03</strong><span>cities connected</span></li>
+                    </ul>
+                    <figure class="about-media">
+                        <img src="images/about-studio.jpg"
+                             alt="Studio staircase with sculptural concrete steps" loading="lazy">
+                        <figcaption class="visually-hidden">Vértice studio interior</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact" aria-labelledby="contact-title">
+            <div class="container contact__inner">
+                <div class="contact__intro">
+                    <p class="eyebrow">START A CONVERSATION</p>
+                    <h2 id="contact-title">Have a space in mind?</h2>
+                    <p class="contact__lede">Tell us about the site, the program, and the timeline. We reply within two working days.</p>
+                    <ul class="contact__details">
+                        <li><span>Email</span><a href="mailto:hello@vertice.example">hello@vertice.example</a></li>
+                        <li><span>Studio</span><a href="tel:+528100000000">+52 81 0000 0000</a></li>
+                        <li><span>Location</span><address>Monterrey, Nuevo León, México</address></li>
+                    </ul>
+                </div>
+
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name"
+                               placeholder="Your full name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email"
+                               placeholder="you@example.com" required>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5"
+                                  placeholder="Tell us about your project…" required></textarea>
+                    </div>
+                    <button class="button button--dark" type="submit">SEND MESSAGE</button>
+                    <p class="form-status" id="contact-status" role="status"></p>
+                    <p class="contact-form__note">Your message is stored in our database.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <div class="site-footer__brand">
+                <span class="site-footer__name">VÉRTICE ARCHITECTURE</span>
+                <span class="site-footer__tag">Built for the long view</span>
+            </div>
+            <nav class="footer-nav" aria-label="Social">
+                <a href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+                <a href="https://www.behance.net/" rel="noopener noreferrer" target="_blank">Behance</a>
+            </nav>
+            <p class="site-footer__copy">© <span id="year">2026</span> Vértice Arquitectura. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

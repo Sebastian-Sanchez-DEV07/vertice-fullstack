@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio panel — Vértice</title>
+    <meta name="description" content="Vértice studio panel to manage projects and messages.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+    <header class="admin-header">
+        <div class="container admin-header__inner">
+            <a class="auth-logo admin-header__logo" href="index.html" aria-label="Vértice Architecture — home">
+                <img src="images/Isologo_light_brown.svg" alt="Vértice Arquitectura">
+            </a>
+            <div class="admin-user">
+                <span class="admin-user__name" id="admin-name">Studio admin</span>
+                <button class="button button--ghost admin-logout" id="logout-button" type="button">LOG OUT</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container admin-main">
+        <section class="admin-intro" aria-labelledby="admin-title">
+            <p class="eyebrow">STUDIO PANEL</p>
+            <h1 class="auth-title" id="admin-title">Project manager.</h1>
+            <p class="admin-copy">Create, edit, and delete the projects shown on the public site. Messages sent from the contact form arrive here.</p>
+        </section>
+
+        <section class="admin-panel" aria-labelledby="form-title">
+            <div class="admin-panel__head">
+                <h2 id="form-title">Project details</h2>
+                <span class="admin-panel__hint" id="form-mode">New project</span>
+            </div>
+
+            <form class="admin-form" id="project-form" novalidate>
+                <input type="hidden" id="project-id">
+
+                <div class="admin-form__row">
+                    <div class="field">
+                        <label for="title">Title</label>
+                        <input id="title" name="title" type="text" maxlength="160" required>
+                    </div>
+                    <div class="field">
+                        <label for="category">Category</label>
+                        <input id="category" name="category" type="text" maxlength="80"
+                               placeholder="Residential" required>
+                    </div>
+                    <div class="field">
+                        <label for="year">Year</label>
+                        <input id="year" name="year" type="number" min="1900" max="2100" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="image_url">Image URL</label>
+                    <input id="image_url" name="image_url" type="text" maxlength="500"
+                           placeholder="/images/project-casa-limite.jpg">
+                </div>
+
+                <div class="field">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" rows="4" maxlength="2000"></textarea>
+                </div>
+
+                <label class="admin-check">
+                    <input id="featured" name="featured" type="checkbox">
+                    <span>Show as featured project</span>
+                </label>
+
+                <div class="admin-form__actions">
+                    <button class="button button--light" id="project-submit" type="submit">CREATE PROJECT</button>
+                    <button class="button button--ghost" id="project-cancel" type="button" hidden>CANCEL EDIT</button>
+                </div>
+                <p class="form-status" id="project-status" role="status"></p>
+            </form>
+        </section>
+
+        <section class="admin-panel" aria-labelledby="list-title">
+            <div class="admin-panel__head">
+                <h2 id="list-title">Published projects</h2>
+                <button class="button button--ghost admin-small-button" id="reload-projects" type="button">REFRESH</button>
+            </div>
+            <div class="admin-list" id="admin-projects" aria-live="polite"></div>
+        </section>
+
+        <section class="admin-panel" aria-labelledby="messages-title">
+            <div class="admin-panel__head">
+                <h2 id="messages-title">Contact messages</h2>
+                <button class="button button--ghost admin-small-button" id="reload-messages" type="button">REFRESH</button>
+            </div>
+            <div class="admin-list" id="admin-messages" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
